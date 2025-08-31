@@ -14,6 +14,7 @@ module "ecs_fargate" {
   vpc_id = module.network.vpc_id
   private_subnet_ids = module.network.private_subnet_ids
   public_subnet_ids  = module.network.public_subnet_ids
+  security_group_id  = module.network.security_group_id
 }
 
 module "s3" {
