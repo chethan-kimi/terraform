@@ -21,7 +21,7 @@ resource "aws_ecs_task_definition" "task" {
   container_definitions = jsonencode([
     {
       name      = "ecs-test"
-      image     = "383236716621.dkr.ecr.us-east-1.amazonaws.com/ecs-testing"
+      image     = "583018241984.dkr.ecr.eu-north-1.amazonaws.com/ecs-test"
       essential = true
       portMappings = [
         {
